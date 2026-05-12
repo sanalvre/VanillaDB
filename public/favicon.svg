@@ -1,0 +1,23 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Stem -->
+  <path d="M16 28 C16 28 16 20 16 14" stroke="#57534e" stroke-width="1.6" stroke-linecap="round"/>
+  <!-- Left leaf -->
+  <path d="M16 22 C13 20 10 21 9 19 C10 17 13 18 16 20" fill="#78716c" opacity="0.7"/>
+  <!-- Right leaf -->
+  <path d="M16 18 C19 16 22 17 23 15 C22 13 19 14 16 16" fill="#78716c" opacity="0.7"/>
+  <!-- Vanilla bean pod -->
+  <path d="M14.5 26 C14 27.5 14.5 29.5 16 30 C17.5 29.5 18 27.5 17.5 26" stroke="#a8956a" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+  <!-- Top petal -->
+  <ellipse cx="16" cy="10" rx="2" ry="3.5" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.6"/>
+  <!-- Top-right petal -->
+  <ellipse cx="19.3" cy="12" rx="2" ry="3.5" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.6" transform="rotate(72 19.3 12)"/>
+  <!-- Bottom-right petal -->
+  <ellipse cx="18" cy="15.8" rx="2" ry="3.5" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.6" transform="rotate(144 18 15.8)"/>
+  <!-- Bottom-left petal -->
+  <ellipse cx="14" cy="15.8" rx="2" ry="3.5" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.6" transform="rotate(216 14 15.8)"/>
+  <!-- Top-left petal -->
+  <ellipse cx="12.7" cy="12" rx="2" ry="3.5" fill="#d6d3d1" stroke="#a8a29e" stroke-width="0.6" transform="rotate(288 12.7 12)"/>
+  <!-- Flower centre -->
+  <circle cx="16" cy="13" r="2.2" fill="#f59e0b" opacity="0.9"/>
+  <circle cx="16" cy="13" r="1" fill="#d97706"/>
+</svg>

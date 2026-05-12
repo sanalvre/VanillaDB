@@ -1,0 +1,41 @@
+[pipeline]
+debounce_seconds = 300
+hash_check = true
+
+[agents.ingest]
+model = "gpt-4o-mini"
+temperature = 0.3
+max_tokens = 2000
+timeout_seconds = 60
+tools = []
+
+[agents.analysis]
+model = "claude-sonnet-4-20250514"
+temperature = 0.4
+max_tokens = 4000
+timeout_seconds = 120
+max_turns = 5
+max_context_tokens = 12000
+tools = ["vault_stats", "concept_search", "graph_neighbors", "concept_staleness"]
+
+[agents.proposal]
+model = "claude-opus-4-6"
+temperature = 0.5
+max_tokens = 8000
+timeout_seconds = 180
+max_turns = 3
+max_context_tokens = 16000
+tools = ["concept_search", "run_code", "graph_stats"]
+
+[agents.review]
+enabled = true
+model = "claude-sonnet-4-20250514"
+temperature = 0.3
+max_tokens = 4000
+timeout_seconds = 60
+max_turns = 1
+tools = ["concept_search", "graph_neighbors"]
+
+[agents.fileback]
+timeout_seconds = 30
+tools = []

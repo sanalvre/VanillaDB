@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/nicedoc/doc-schemas/master/tauri-v2.json",
+  "productName": "VanillaDB",
+  "version": "0.1.0",
+  "identifier": "com.vanilladb.app",
+  "build": {
+    "frontendDist": "../dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "VanillaDB",
+        "width": 1280,
+        "height": 840,
+        "resizable": true,
+        "fullscreen": false,
+        "minWidth": 900,
+        "minHeight": 600
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; connect-src 'self' http://127.0.0.1:* ws://127.0.0.1:*; img-src 'self' data: blob:; font-src 'self' data:"
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ],
+    "externalBin": [
+      "binaries/vanilla-sidecar"
+    ],
+    "resources": [],
+    "copyright": "© 2026 VanillaDB",
+    "category": "Productivity",
+    "shortDescription": "Agent-native knowledge base",
+    "longDescription": "VanillaDB is an agent-native desktop knowledge base. Ingest documents, let AI agents extract concepts and build a knowledge graph, then explore and edit your vault with a rich editor."
+  },
+  "plugins": {
+    "updater": {
+      "active": true,
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IEJCNDY5QTU4NDI2OUMxNjUKUldSbHdXbENXSnBHdTUyVjNXQ3lDRTFTWDRiRFd2SEF1TUJjY08yN1dEV2cvTnc3WVluUzM4UnkK",
+      "endpoints": [
+        "https://github.com/sanalvre/VanillaDB/releases/latest/download/latest.json"
+      ],
+      "dialog": false
+    }
+  }
+}

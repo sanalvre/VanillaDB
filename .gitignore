@@ -1,0 +1,87 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Rust / Tauri build
+src-tauri/target/
+*.rs.bk
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+*.spec
+!sidecar/vanilla-sidecar.spec
+.eggs/
+.venv/
+venv/
+sidecar/venv/
+
+# PyInstaller
+sidecar/dist/
+sidecar/build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# SQLite databases (not vault files — app data)
+*.db
+*.db-wal
+*.db-shm
+
+# Tauri build output
+src-tauri/gen/
+
+# Test output
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Marker/MinerU model weights (downloaded at runtime)
+ml-models/
+*.onnx
+*.bin
+
+# Compiled sidecar binary (built by PyInstaller / CI — not committed)
+src-tauri/binaries/
+
+# Local development / Claude Code tooling (not for public repos)
+.claude/
+BUILDLOG.md
+
+# Tests (local development only)
+tests/
+
+# PyInstaller hook pycache
+sidecar/hooks/__pycache__/
+
+# Build virtualenv (used by PyInstaller CI builds, heavy)
+sidecar/.venv-build/
+
+# Windows binaries — built by CI, never committed
+*.exe
+*.msi
+
+# Accidentally materialised shell-expansion paths
+%USERPROFILE%/
+
+# Tauri code-signing keys (never commit private keys)
+**/.tauri/*.key

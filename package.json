@@ -1,0 +1,50 @@
+{
+  "name": "vanilladb",
+  "version": "0.1.0",
+  "description": "Agent-native desktop knowledge base — ingest docs, build a knowledge graph, explore your vault.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sanalvre/VanillaDB"
+  },
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@codemirror/commands": "^6.10.3",
+    "@codemirror/lang-markdown": "^6.5.0",
+    "@codemirror/language": "^6.12.3",
+    "@codemirror/state": "^6.6.0",
+    "@codemirror/view": "^6.41.0",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-clipboard-manager": "^2.3.2",
+    "@tauri-apps/plugin-dialog": "^2",
+    "@tauri-apps/plugin-fs": "^2",
+    "@tauri-apps/plugin-shell": "^2",
+    "@tauri-apps/plugin-updater": "^2",
+    "cmdk": "^1.1.1",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-force-graph-2d": "^1.29.1",
+    "zustand": "^5"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4",
+    "@tauri-apps/cli": "^2",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@vitejs/plugin-react": "^4",
+    "jsdom": "^29.1.1",
+    "tailwindcss": "^4",
+    "typescript": "~5.8",
+    "vite": "^6",
+    "vitest": "^3"
+  }
+}
