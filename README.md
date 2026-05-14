@@ -1,5 +1,5 @@
-# <img src="public/favicon.svg" width="32" height="32" alt="" valign="middle"> VanillaDB
-
+# <img src="public/favicon.svg" width="32" height="32" alt="" valign="middle"> VanillaGraph
+*Changed name to VanillaGraph on 5-13-26
 A local knowledge base where AI agents do the filing.
 
 Drop in documents or have agents search the web. Agents will read them, extract concepts, and propose structured wiki articles. After your approval, you have a full knowledge graph with markdown file nodes and a source of truth wiki. Inspired by Andrej Karpathy.
